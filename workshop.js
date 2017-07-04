@@ -16,7 +16,13 @@ function map(mappingFunction, theArray) {
 }
 
 function filter(predicate, theArray) {
-
+  var newArray = [];
+  for(var i = 0; i < theArray.length; i++) {
+    if (theArray[i] % 2 === 1) {
+      newArray.push(theArray[i]);
+    }
+  }
+  return newArray;
 }
 
 function every(predicate, theArray) {
